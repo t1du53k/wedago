@@ -1,0 +1,475 @@
+/* line 1, ../scss/style.scss */
+html {
+  min-width: 1180px;
+}
+
+/* line 5, ../scss/style.scss */
+html, body, #body {
+  height: 100%;
+}
+
+/* line 9, ../scss/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* line 15, ../scss/style.scss */
+body {
+  font: 400 14px / 1em "Lato", sans-serif;
+  line-height: 1.5em;
+}
+
+/* line 20, ../scss/style.scss */
+div {
+  display: block;
+}
+
+/* line 24, ../scss/style.scss */
+img {
+  display: block;
+}
+
+/* line 28, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, ../scss/style.scss */
+h1 {
+  font-weight: 400;
+  font-size: 4.2rem;
+  text-shadow: 0 0 160px #000;
+}
+
+/* line 38, ../scss/style.scss */
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 0 0 160px #000;
+}
+
+/* line 44, ../scss/style.scss */
+p {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-shadow: 0 0 160px #000;
+}
+
+/* line 50, ../scss/style.scss */
+.whitened {
+  color: white;
+}
+
+/* line 54, ../scss/style.scss */
+.fixed-top > .table-row {
+  display: table-row;
+}
+
+/* line 58, ../scss/style.scss */
+.fixed-top > .table-row > .table-cell {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+/* line 64, ../scss/style.scss */
+.fixed-top > .table-row > .middle-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+}
+
+/* line 71, ../scss/style.scss */
+.fixed-top {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 78, ../scss/style.scss */
+.fixed-top #header {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 50px;
+  -moz-box-shadow: 0px 0px 0px #bbb;
+  -webkit-box-shadow: 0px 0px 5px #bbb;
+  box-shadow: 0px 0px 5px #bbb;
+}
+/* line 87, ../scss/style.scss */
+.fixed-top #header .holder {
+  position: relative;
+  z-index: 1;
+}
+/* line 90, ../scss/style.scss */
+.fixed-top #header .holder a {
+  color: #333;
+}
+/* line 93, ../scss/style.scss */
+.fixed-top #header .holder a:hover {
+  color: #f3ae2a;
+}
+/* line 96, ../scss/style.scss */
+.fixed-top #header .holder .contacts {
+  text-align: right;
+  padding-top: 5px;
+  white-space: nowrap;
+}
+/* line 100, ../scss/style.scss */
+.fixed-top #header .holder .contacts a {
+  padding: 5px 26px 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 105, ../scss/style.scss */
+.fixed-top #header .holder .contacts .contact-mail {
+  background: transparent url(../../img/ico-email.png) no-repeat 0px 9px;
+  background-size: 14px 14px;
+}
+/* line 109, ../scss/style.scss */
+.fixed-top #header .holder .contacts .contact-phone {
+  background: transparent url(../../img/ico-phone.png) no-repeat 0px 9px;
+  background-size: 14px 14px;
+}
+/* line 114, ../scss/style.scss */
+.fixed-top #header .holder .logo {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 70px;
+  height: 70px;
+}
+/* line 120, ../scss/style.scss */
+.fixed-top #header .holder .logo img {
+  width: 100%;
+  height: auto;
+}
+/* line 125, ../scss/style.scss */
+.fixed-top #header .holder .top-nav {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 5px 11px 0 0;
+}
+/* line 130, ../scss/style.scss */
+.fixed-top #header .holder .top-nav .menu-main-top-nav {
+  padding: 0;
+  float: right;
+  font: 700 12px / 1em "Lato", sans-serif;
+}
+/* line 134, ../scss/style.scss */
+.fixed-top #header .holder .top-nav .menu-main-top-nav .menu-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 25px 0 0;
+}
+/* line 139, ../scss/style.scss */
+.fixed-top #header .holder .top-nav .menu-main-top-nav .right {
+  padding: 0 15px 0 0;
+}
+/* line 145, ../scss/style.scss */
+.fixed-top #header .locations-nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 151, ../scss/style.scss */
+.info-nav-row {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 0px;
+  -moz-box-shadow: 0px 0px 0px #bbb;
+  -webkit-box-shadow: 0px 0px 5px #bbb;
+  box-shadow: 0px 0px 5px #bbb;
+  background-color: #333;
+}
+/* line 160, ../scss/style.scss */
+.info-nav-row a {
+  color: white;
+}
+/* line 163, ../scss/style.scss */
+.info-nav-row a:hover {
+  color: #f3ae2a;
+}
+/* line 166, ../scss/style.scss */
+.info-nav-row .info-nav {
+  display: block;
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 0 11px 0 0;
+}
+/* line 171, ../scss/style.scss */
+.info-nav-row .info-nav .menu-main-info-nav {
+  padding: 0;
+  float: left;
+  font: 700 12px / 1em "Lato", sans-serif;
+}
+/* line 175, ../scss/style.scss */
+.info-nav-row .info-nav .menu-main-info-nav .menu-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+/* line 180, ../scss/style.scss */
+.info-nav-row .info-nav .menu-main-info-nav .right {
+  padding: 0 15px 0 0;
+}
+
+/* line 188, ../scss/style.scss */
+.hero {
+  position: relative;
+  display: table-row;
+}
+/* line 191, ../scss/style.scss */
+.hero .middle-table-cell {
+  position: relative;
+}
+/* line 193, ../scss/style.scss */
+.hero .middle-table-cell video {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+/* line 204, ../scss/style.scss */
+.hero .heroimg-container .heroimg {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 400px;
+}
+/* line 211, ../scss/style.scss */
+.hero .actions {
+  text-align: center;
+}
+/* line 213, ../scss/style.scss */
+.hero .actions .button {
+  display: inline-block;
+  padding: 20px 35px;
+  border-radius: 10px;
+  background-color: #f3ae2a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 200ms;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+/* line 227, ../scss/style.scss */
+.hero .actions .button:hover {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 200ms;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+/* line 238, ../scss/style.scss */
+.hero .actions .info {
+  color: white;
+  height: 100px;
+  margin-top: 5px;
+  font: 700 16px / 1em "Lato", sans-serif;
+  text-shadow: 0px 0px 5px #000;
+}
+
+/* line 248, ../scss/style.scss */
+.wrapper {
+  position: relative;
+  width: 1180px;
+  margin: 0px auto;
+}
+
+/* line 254, ../scss/style.scss */
+.navcontainer {
+  position: relative;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+}
+/* line 261, ../scss/style.scss */
+.navcontainer .raisemenu {
+  float: left;
+  width: 40%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+/* line 267, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+/* line 273, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location {
+  float: left;
+  border-left: 1px solid #d3d3d3;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  position: relative;
+}
+/* line 281, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a {
+  display: block;
+  height: 60px;
+  color: #333;
+  transition: color 250ms;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+/* line 290, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a .building {
+  position: absolute;
+  top: 0px;
+  height: 0px;
+  width: 100px;
+  background-color: white;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+}
+/* line 301, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a #wttbuilding {
+  background: url(../../img/wttbuilding2.png) no-repeat 0 0;
+}
+/* line 304, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a #rondo1building {
+  background: url(../../img/rondo1building.png) no-repeat 0 0;
+}
+/* line 307, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a #atriumbuilding {
+  background: url(../../img/atriumbuilding.png) no-repeat 0 0;
+}
+/* line 310, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a .floor {
+  font: 400 italic 14px / 1em "Lato", sans-serif;
+  padding: 10px 0 3px 5px;
+}
+/* line 314, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a .name {
+  font: 700 italic 18px / 1em "Lato", sans-serif;
+  padding-left: 5px;
+}
+/* line 319, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .location a:hover {
+  color: #f3ae2a;
+  transition: color 250ms;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+/* line 328, ../scss/style.scss */
+.navcontainer .raisemenu .locations-raisemenu .right {
+  border-right: 1px solid #d3d3d3;
+}
+/* line 333, ../scss/style.scss */
+.navcontainer .country-menu {
+  width: 40%;
+  height: 60px;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 339, ../scss/style.scss */
+.navcontainer .country-menu .countrylist {
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+}
+/* line 343, ../scss/style.scss */
+.navcontainer .country-menu .countrylist li {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 30px;
+  height: 50px;
+  -moz-box-shadow: 0px 0px 0px #bbb;
+  -webkit-box-shadow: 0px 0px 0px #bbb;
+  box-shadow: 0px 0px 0px #bbb;
+}
+/* line 354, ../scss/style.scss */
+.navcontainer .country-menu .countrylist .polishflag {
+  background: url(../../img/Poland.png) no-repeat;
+  background-size: 100% auto;
+}
+/* line 358, ../scss/style.scss */
+.navcontainer .country-menu .countrylist .englishflag {
+  background: url(../../img/England.png) no-repeat;
+  background-size: 100% auto;
+}
+/* line 364, ../scss/style.scss */
+.navcontainer .get-down {
+  position: absolute;
+  top: 10px;
+  left: 47.5%;
+  width: 38px;
+  height: 38px;
+  background: transparent url(https://www.paypalobjects.com/webstatic/mktg/2014design/fancy-down-arrow2x.png) center center no-repeat;
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+  background-size: 22px 13px;
+  transition: border-color 200ms;
+  transition-property: border-color;
+  transition-duration: 200ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+/* line 380, ../scss/style.scss */
+.navcontainer .get-down:hover {
+  border-color: gray;
+  transition: border-color 200ms;
+  transition-property: border-color;
+  transition-duration: 200ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+/* line 390, ../scss/style.scss */
+#wtt-raisemenu-location:hover #wttbuilding {
+  height: 283px;
+  top: -283px;
+}
+
+/* line 395, ../scss/style.scss */
+#rondo1-raisemenu-location:hover #rondo1building {
+  height: 240px;
+  top: -240px;
+}
+
+/* line 400, ../scss/style.scss */
+#atrium-raisemenu-location:hover #atriumbuilding {
+  height: 100px;
+  top: -100px;
+}
+
+/* line 405, ../scss/style.scss */
+.main {
+  height: 1000px;
+  background-color: white;
+}

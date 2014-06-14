@@ -1,0 +1,408 @@
+html {
+    min-width: 1180px;
+}
+
+html, body, #body {
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+body {
+    font: 400 14px / 1em "Lato", sans-serif;
+    line-height: 1.5em;
+}
+
+div {
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4.2rem;
+    text-shadow: 0 0 160px #000;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 0 0 160px #000;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-shadow: 0 0 160px #000;
+}
+
+.whitened {
+    color: white;
+}
+
+.fixed-top > .table-row {
+    display: table-row;
+}
+
+.fixed-top > .table-row > .table-cell {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.fixed-top > .table-row > .middle-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.fixed-top {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+    top: 0;
+    left: 0;
+    #header {
+        //background-color: #262729;
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 50px;
+        -moz-box-shadow: 0px 0px 0px #bbb;
+        -webkit-box-shadow: 0px 0px 5px #bbb;
+        box-shadow: 0px 0px 5px #bbb;
+        .holder {
+            position: relative;
+            z-index: 1;
+            a {
+                color: #333;
+            }
+            a:hover {
+                color: #f3ae2a;
+            }
+            .contacts {
+                text-align: right;
+                padding-top: 5px;
+                white-space: nowrap;
+                a {
+                    padding: 5px 26px 5px 20px;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+                .contact-mail {
+                    background: transparent url(../../img/ico-email.png) no-repeat 0px 9px;
+                    background-size: 14px 14px;
+                }
+                .contact-phone {
+                    background: transparent url(../../img/ico-phone.png) no-repeat 0px 9px;
+                    background-size: 14px 14px;
+                }
+            }
+            .logo {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                width: 70px;
+                height: 70px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .top-nav {
+                display: block;
+                float: right;
+                margin: 0;
+                padding: 5px 11px 0 0;
+                .menu-main-top-nav {
+                    padding: 0;
+                    float: right;
+                    font: 700 12px / 1em "Lato", sans-serif;
+                    .menu-item {
+                        position: relative;
+                        display: inline-block;
+                        padding: 0 25px 0 0;
+                    }
+                    .right {
+                        padding: 0 15px 0 0;
+                    }
+                }
+            }
+        }
+        .locations-nav-list {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+.info-nav-row {
+  position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 0px;
+        -moz-box-shadow: 0px 0px 0px #bbb;
+        -webkit-box-shadow: 0px 0px 5px #bbb;
+        box-shadow: 0px 0px 5px #bbb;
+        background-color: #333;
+        a {
+                color: white;
+            }
+            a:hover {
+                color: #f3ae2a;
+            }
+            .info-nav {
+                display: block;
+                float: left;
+                margin: 0 0 0 5px;
+                padding: 0 11px 0 0;
+                .menu-main-info-nav {
+                    padding: 0;
+                    float: left;
+                    font: 700 12px / 1em "Lato", sans-serif;
+                    .menu-item {
+                        position: relative;
+                        display: inline-block;
+                        padding: 0 10px 0 0;
+                    }
+                    .right {
+                        padding: 0 15px 0 0;
+                    }
+                }
+            }
+}
+
+
+.hero {
+    position: relative;
+    display: table-row;
+    .middle-table-cell {
+        position: relative;
+        video {
+            position: absolute;
+            overflow: hidden;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .heroimg-container {
+        .heroimg {
+            width: 60%;
+            max-width: 500px;
+            margin: 0 auto;
+            height: 400px;
+        }
+    }
+    .actions {
+        text-align: center;
+        .button {
+            display: inline-block;
+            padding: 20px 35px;
+            border-radius: 10px;
+            background-color: #f3ae2a;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 200ms;
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: initial;
+            transition-delay: initial;
+        }
+        .button:hover {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 200ms;
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: initial;
+            transition-delay: initial;
+        }
+        .info {
+            color: white;
+            height: 100px;
+            margin-top: 5px;
+            font: 700 16px / 1em "Lato", sans-serif;
+            text-shadow: 0px 0px 5px #000;
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 1180px;
+    margin: 0px auto;
+}
+
+.navcontainer {
+    position: relative;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    .raisemenu {
+        float: left;
+        width: 40%;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        .locations-raisemenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: left;
+            width: 100%;
+            .location {
+                float: left;
+                border-left: 1px solid #d3d3d3;
+                width: 100px;
+                padding: 0;
+                margin: 0;
+                text-align: left;
+                position: relative;
+                a {
+                    display: block;
+                    height: 60px;
+                    color: #333;
+                    transition: color 250ms;
+                    transition-property: color;
+                    transition-duration: 250ms;
+                    transition-timing-function: initial;
+                    transition-delay: initial;
+                    .building {
+                        position: absolute;
+                        top: 0px;
+                        height: 0px;
+                        width: 100px;
+                        background-color: white;
+                        transition: all 0.25s ease;
+                        -webkit-transition: all 0.25s ease;
+                        -o-transition: all 0.25s ease;
+                        -moz-transition: all 0.25s ease;
+                    }
+                    #wttbuilding {
+                        background: url(../../img/wttbuilding2.png) no-repeat 0 0;
+                    }
+                    #rondo1building {
+                        background: url(../../img/rondo1building.png) no-repeat 0 0;
+                    }
+                    #atriumbuilding {
+                        background: url(../../img/atriumbuilding.png) no-repeat 0 0;
+                    }
+                    .floor {
+                        font: 400 italic 14px / 1em "Lato", sans-serif;
+                        padding: 10px 0 3px 5px;
+                    }
+                    .name {
+                        font: 700 italic 18px / 1em "Lato", sans-serif;
+                        padding-left: 5px;
+                    }
+                }
+                a:hover {
+                    color: #f3ae2a;
+                    transition: color 250ms;
+                    transition-property: color;
+                    transition-duration: 250ms;
+                    transition-timing-function: initial;
+                    transition-delay: initial;
+                }
+            }
+            .right {
+                border-right: 1px solid #d3d3d3;
+            }
+        }
+    }
+    .country-menu {
+        width: 40%;
+        height: 60px;
+        float: right;
+        margin: 0;
+        padding: 0;
+        .countrylist {
+            list-style: none;
+            padding: 5px;
+            margin: 0px;
+            li {
+                display: inline-block;
+                float: right;
+                margin-top: 10px;
+                margin-left: 20px;
+                width: 30px;
+                height: 50px;
+                -moz-box-shadow: 0px 0px 0px #bbb;
+                -webkit-box-shadow: 0px 0px 0px #bbb;
+                box-shadow: 0px 0px 0px #bbb;
+            }
+            .polishflag {
+                background: url(../../img/Poland.png) no-repeat;
+                background-size: 100% auto;
+            }
+            .englishflag {
+                background: url(../../img/England.png) no-repeat;
+                background-size: 100% auto;
+            }
+        }
+    }
+    .get-down {
+        position: absolute;
+        top: 10px;
+        left: 47.5%;
+        width: 38px;
+        height: 38px;
+        background: transparent url(https://www.paypalobjects.com/webstatic/mktg/2014design/fancy-down-arrow2x.png) center center no-repeat;
+        border-radius: 50%;
+        border: 1px solid #d3d3d3;
+        background-size: 22px 13px;
+        transition: border-color 200ms;
+        transition-property: border-color;
+        transition-duration: 200ms;
+        transition-timing-function: initial;
+        transition-delay: initial;
+    }
+    .get-down:hover {
+        border-color: gray;
+        transition: border-color 200ms;
+        transition-property: border-color;
+        transition-duration: 200ms;
+        transition-timing-function: initial;
+        transition-delay: initial;
+    }
+}
+
+#wtt-raisemenu-location:hover #wttbuilding {
+    height: 283px;
+    top: -283px;
+}
+
+#rondo1-raisemenu-location:hover #rondo1building {
+    height: 240px;
+    top: -240px;
+}
+
+#atrium-raisemenu-location:hover #atriumbuilding {
+    height: 100px;
+    top: -100px;
+}
+
+.main {
+    height: 1000px;
+    background-color: white;
+}
