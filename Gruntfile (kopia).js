@@ -1,14 +1,9 @@
-'use strict';
- 
+// This shows a full config file!
 module.exports = function (grunt) {
- 
-  // Project configuration.
   grunt.initConfig({
     watch: {
-      sass: {
-        files: "assets/scss/*.scss",
-        tasks: ['compass']
-      }
+      files: "assets/scss/**/*.scss",
+      tasks: ['compass'],
     },
     compass: {
       dist: {
@@ -20,24 +15,22 @@ module.exports = function (grunt) {
       }
     },
     browserSync: {
-      default_options: {
+      dev: {
         bsFiles: {
-          src: [
-            "css/*.css",
-            "*.html"
-          ]
+          src : 'assets/css/*.css','*.html'
         },
         options: {
-          watchTask: true,
+          watchTask: true
         }
       }
     }
   });
+
+  // load npm tasks
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
- 
-  // Launch BrowserSync + watch task
-  grunt.registerTask('default', ['browserSync', 'watch']);
+
+  // create custom task-list
+  grunt.registerTask('default', ["browserSync", "watch"]);
 };
