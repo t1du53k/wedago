@@ -92,7 +92,6 @@ p {
       }
       .contacts {
         text-align: right;
-        padding-top: 5px;
         white-space: nowrap;
         a {
           padding: 5px 26px 5px 20px;
@@ -110,7 +109,7 @@ p {
       }
       .logo {
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: 5px;
         width: 70px;
         height: 70px;
@@ -125,16 +124,29 @@ p {
         margin: 0;
         padding: 5px 11px 0 0;
         .menu-main-top-nav {
+          margin: 0;
           padding: 0;
           float: right;
           font: 700 12px / 1em "Lato", sans-serif;
           .menu-item {
             position: relative;
             display: inline-block;
-            padding: 0 25px 0 0;
+            padding: 0;
+            margin: 10px 12.5px 10px 12.5px;
+            #menu-item-location-menu {
+              display: block;
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              font: 700 12px / 1em "Lato", sans-serif;
+              border-radius: 2px;
+              li {
+                padding: 10px
+              }
+            }
           }
           .right {
-            padding: 0 15px 0 0;
+            padding: 10 15px 10 12.5px;
           }
         }
       }
@@ -157,7 +169,8 @@ p {
       text-shadow: 0 0 160px #000;
     }
     p {
-      text-shadow: 0 0 160px #000;
+      font-weight: 400;
+      text-shadow: 0 0 60px #000;
     }
     video {
       position: absolute;
@@ -180,6 +193,7 @@ p {
   .actions {
     text-align: center;
     .button {
+      width: 284px;
       display: inline-block;
       padding: 20px 35px;
       border-radius: 10px;
@@ -214,12 +228,11 @@ p {
   }
 }
 
-    .wrapper {
-      position: relative;
-      width: 1180px;
-      margin: 0px auto;
-    }
-
+.wrapper {
+position: relative;
+width: 1180px;
+margin: 0px auto;
+}
 .navcontainer {
   position: relative;
   box-shadow: 0 1px rgba(0, 0, 0, 0.1);
@@ -355,7 +368,10 @@ p {
     transition-delay: initial;
   }
 }
-
+#menu-item-location:hover #menu-item-location-menu-container {
+  visibility: visible;
+  display: block;
+}
 #wtt-raisemenu-location:hover #wttbuilding {
   height: 283px;
   top: -283px;

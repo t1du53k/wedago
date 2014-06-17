@@ -5,7 +5,7 @@
 	left: 0;
 	background-color: white;
 	width: 100%;
-	height: 110px;
+	height: 100px;
 	-moz-box-shadow: 0px 0px 0px #bbb;
 	-webkit-box-shadow: 0px 0px 5px #bbb;
 	box-shadow: 0px 0px 5px #bbb;
@@ -19,7 +19,6 @@
 		}
 		.contacts {
 			text-align: right;
-			padding-top: 5px;
 			white-space: nowrap;
 			a {
 				padding: 5px 26px 5px 20px;
@@ -35,9 +34,10 @@
 				background-size: 14px 14px;
 			}
 		}
+
 		.logo {
 			position: absolute;
-			top: 10px;
+			top: 5px;
 			left: 5px;
 			width: 70px;
 			height: 70px;
@@ -52,13 +52,52 @@
 			margin: 0;
 			padding: 5px 11px 0 0;
 			.menu-main-top-nav {
+				margin: 0;
 				padding: 0;
 				float: right;
 				font: 700 12px / 1em "Lato", sans-serif;
 				.menu-item {
 					position: relative;
 					display: inline-block;
-					padding: 0 25px 0 0;
+					padding: 0;
+					margin: 10px 12.5px 10px 12.5px;
+				}
+				.right {
+					padding: 10 
+				}
+				.locations-nav-list {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+	.info-nav-row {
+		width: 100%;
+		height: 36px;
+		-moz-box-shadow: 0px 2px 0px #bbb;
+		-webkit-box-shadow: 0px 2px 0px #bbb;
+		box-shadow: 0px 2px 0px #ccc; 
+		background-color: #333;
+		a {
+			color: white;
+		}
+		a:hover {
+			color: #f3ae2a;
+		}
+		.info-nav {
+			display: block;
+			float: left;
+			margin: 0 0 0 5px;
+			padding: 0 11px 0 0;
+			.menu-main-info-nav {
+				padding: 0;
+				float: left;
+				font: 700 12px / 1em "Lato", sans-serif;
+				.menu-item {
+					position: relative;
+					display: inline-block;
+					padding: 0 10px 0 0;
 				}
 				.right {
 					padding: 0 15px 0 0;
@@ -66,66 +105,31 @@
 			}
 		}
 	}
-	.locations-nav-list {
-		margin: 0;
-		padding: 0;
 	}
-}
-.info-nav-row {
-	width: 100%;
-	height: 36px;
-	-moz-box-shadow: 0px 2px 0px #bbb;
-	-webkit-box-shadow: 0px 2px 0px #bbb;
-	box-shadow: 0px 2px 0px #ccc; 
-	background-color: #333;
-	a {
-		color: white;
+	.slider-hero {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		bottom: 0px;
+		left: 0px;
+		z-index: 0;
 	}
-	a:hover {
-		color: #f3ae2a;
-	}
-	.info-nav {
-		display: block;
-		float: left;
-		margin: 0 0 0 5px;
-		padding: 0 11px 0 0;
-		.menu-main-info-nav {
-			padding: 0;
-			float: left;
-			font: 700 12px / 1em "Lato", sans-serif;
-			.menu-item {
-				position: relative;
-				display: inline-block;
-				padding: 0 10px 0 0;
-			}
-			.right {
-				padding: 0 15px 0 0;
-			}
-		}
-	}
-}
-.slider-hero {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	bottom: 0px;
-	left: 0px;
-	z-index: 0;
-}
+
 .quarter-info-hide {
-	display: none;
+	display: block;
 	position: fixed;
 	z-index: 10;
-	top: 120px;
+	top: 110px;
 	width: 100%;
 	.quater-info-hide-container {
+		position: relative;
 		width: 1180px;
 		margin: auto;
-		height: 100px;
+		height: 80px;
 		.hide-button {
 			position: absolute;
-			top: 10px;
-			left: 38%;
+			bottom: 20px;
+			left: 420px;
 			cursor: pointer;
 			width: 38px;
 			height: 38px;
@@ -175,21 +179,23 @@
 	.title {
 		text-align:  center;
 		background-color: white;
-		height: 85px;
+		height: 80px;
 		h2 {
 			position: fixed;
 			width: 472px;
 			height: 40px;
-			top: 115px;
+			top: 105px;
 			padding-bottom: 20px;
 			margin-bottom: 0px;
 			padding-top:  20px;
 			margin-top: 0;
 			font: 400 2.2rem "Roboto Condensed", sans-serif;
-			//font: 700 2.2rem "Lato", sans-serif;
 			color: #333;
 			background-color: white;
 			border-bottom: 2px solid rgba(0,0,0,0.1);
+		}
+		.doubleline {
+			height: 80px;
 		}
 		h3 {
 			font: 400 italic 1.8rem "Lato", sans-serif;
@@ -208,12 +214,15 @@
 		padding: 0;
 		width: 100%;
 	}
+	#doublelinetitle {
+		height: 120px;
+	}
 	.rest {
 		margin-top: 15px;
 		h4 {
 			color: #f3ae2a;
 			font: 400 1rem "Lato", sans-serif;
-			}
+		}
 		.button {
 			display: block;
 			margin: 0 auto;
@@ -308,8 +317,8 @@
 				h3 {
 					display: block;
 					border-top: 2px solid #ccc;
-				padding: 10px 0;
-				margin: 0;
+					padding: 10px 0;
+					margin: 0;
 				}
 				h3.tagname {
 					width: 50%;
@@ -331,7 +340,7 @@
 		}
 		.sales {
 			p {
-				font: 300 1.2rem "Roboto Condensed", sans-serif;
+				font: 400 1.2rem "Roboto Condensed", sans-serif;
 			}
 		}
 		.end {
@@ -342,4 +351,7 @@
 			padding-top: 10px;
 		}
 	}
+}
+#doubleline-quarter-info-hide-container {
+	height: 120px;
 }
