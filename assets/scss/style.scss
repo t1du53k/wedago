@@ -32,19 +32,16 @@ a {
 h1 {
   font-weight: 400;
   font-size: 4.2rem;
-  text-shadow: 0 0 160px #000;
 }
 
 h2 {
   font-weight: 400;
   font-size: 2rem;
-  text-shadow: 0 0 160px #000;
 }
 
 p {
   font-weight: 300;
   font-size: 1.3rem;
-  text-shadow: 0 0 160px #000;
 }
 
 .whitened {
@@ -153,6 +150,15 @@ p {
   display: table-row;
   .middle-table-cell {
     position: relative;
+    h1 {
+        text-shadow: 0 0 160px #000;
+    }
+    h2 {
+      text-shadow: 0 0 160px #000;
+    }
+    p {
+      text-shadow: 0 0 160px #000;
+    }
     video {
       position: absolute;
       overflow: hidden;
